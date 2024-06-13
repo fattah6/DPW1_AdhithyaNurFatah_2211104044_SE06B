@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Barang</title>
+</head>
+
+<body>
+    <h1>Pembelian Barang</h1>
+    <button onclick="hitungTotal()">Hitung Total Harga</button>
+    <p>Total harga pembelian adalah: <span id="totalHarga">0</span></p>
+
+    <script>
+        function hitungTotal() {
+            const hargaA = 10000;
+            const jumlahA = 5;
+            const hargaB = 15000;
+            const jumlahB = 3;
+            const hargaC = 20000;
+            const jumlahC = 2;
+1
+            const totalHarga = (hargaA * jumlahA) + (hargaB * jumlahB) + (hargaC * jumlahC);
+
+            document.getElementById('totalHarga').textContent = totalHarga;
+        }
+    </script>
+</body>
+
+</html>
